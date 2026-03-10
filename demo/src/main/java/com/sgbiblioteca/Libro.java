@@ -83,7 +83,7 @@ public class Libro {
                 return false;
             }
         }
-        
+
 
           public boolean DevLibro(){
             if (numeroEjemPres >0) {
@@ -96,8 +96,14 @@ public class Libro {
             }
                 
             }
-          }  
 
+            public String  DatLibros(){
+                return "Titulo: " + titulo + ", Autor: " + autor + ", numero de Libros: " + numeroEjem + ", numero de Libros prestados: " + numeroEjemPres;
+            }
+
+        }
+
+           
 
          
 
