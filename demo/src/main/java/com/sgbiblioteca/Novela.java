@@ -4,7 +4,7 @@ public class Novela extends Libro {
     private String tipo;
 
     public Novela(String titulo, String autor, int numeroEjem, int numeroEjemPres, String tipo) {
-        super(titulo, autor, numeroEjem, numeroEjemPres); // Llama al constructor de Libro
+        super(titulo, autor, numeroEjem, numeroEjemPres); 
         this.tipo = tipo;
     }
 
