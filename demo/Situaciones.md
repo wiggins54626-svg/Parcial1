@@ -2,17 +2,12 @@
 ## Situaciones en las que la herencia no se podría realizar
 ---
 
-### 1. Clase marcada como 
-- 	Descripción: Una clase declarada como  no puede ser extendida por ninguna otra.
-- 	Ejemplo aplicado: Si la clase  se declarara como , entonces ,  y  no podrían heredar de ella.
-- 	Impacto: Se rompe la jerarquía de herencia y se limita la reutilización de código.
-- 	Categoría SWEBOK: Diseño orientado a objetos – Restricciones de herencia.
+### 1. Clase marcada como PRIVADA s
+La herencia en Java permite que una clase pueda usar las características de otra. Sin embargo, esto no es posible si la clase está declarada como **private**, porque otras clases no pueden acceder a ella. Por ejemplo, si la clase **Libro** fuera privada, otras clases no podrían heredar sus atributos o métodos. Esto hace que se pierda la ventaja de reutilizar código en el programa. Por eso normalmente la clase base se declara como **public** para que otras clases puedan extenderla.
 
-### 2. Clase con modificador 
-- 	Descripción: Una clase declarada como  no puede ser utilizada fuera del archivo donde está definida.
-- 	Ejemplo aplicado: Si  fuera , las clases  o  no podrían acceder a ella ni extenderla.
-- 	Impacto: La clase queda encapsulada y no disponible para herencia, aunque exista en el sistema.
-- 	Categoría SWEBOK: Diseño orientado a objetos – Encapsulamiento y visibilidad.
+
+
+
 
 #public class Libro {
 
